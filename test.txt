@@ -25,7 +25,7 @@ $URLSecure = "$URL$Endpoint$Token"
 
 $gist = Invoke-RestMethod -Method Post -Uri $URLSecure -Body $JSON
 
-$URLEdit = "$URL$Endpoint/$($gist.id)$Token$ACCESSTOKEN"
+$URLEdit = "$URL$Endpoint/$($gist.id)$Token$global:ACCESSTOKEN"
 
 $JSON2 = ConvertTo-Json @{
           description = "Potadasdasto";

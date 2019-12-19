@@ -3,7 +3,7 @@ $Endpoint = "/gists"
 
 $URLAnon = "$URL$Endpoint"
 
-$password = Get-Content C:\Users\ASUS\Desktop\pass.txt
+$password = Get-Content C:\Users\ASUS\pass.txt
 
 $JSON = ConvertTo-Json @{
           description = "test fetch";

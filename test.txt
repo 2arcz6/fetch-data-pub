@@ -20,12 +20,12 @@ $JSON = ConvertTo-Json @{
 
 $gist = Invoke-RestMethod -Method Post -Uri $URLAnon -Body $JSON
 
-$Token = "?access_token=e7bbfe93e554284a4f2ec731916c208d160689a5"
+$Token = "?access_token="
 $URLSecure = "$URL$Endpoint$Token"
 
 $gist = Invoke-RestMethod -Method Post -Uri $URLSecure -Body $JSON
 
-$URLEdit = "$URL$Endpoint/$($gist.id)$Token"
+$URLEdit = "$URL$Endpoint/$($gist.id)$Token$ACCESSTOKEN"
 
 $JSON2 = ConvertTo-Json @{
           description = "Potadasdasto";

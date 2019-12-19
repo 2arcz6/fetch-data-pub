@@ -20,7 +20,7 @@ $JSON = ConvertTo-Json @{
 
 $gist = Invoke-RestMethod -Method Post -Uri $URLAnon -Body $JSON
 
-$Token = "?access_token=0d349d440d54ad302fb4de54de6c44ce950408f0"
+$Token = "?access_token=e50f49b324409425846fcd256aef4b34863c3812"
 $URLSecure = "$URL$Endpoint$Token"
 
 $gist = Invoke-RestMethod -Method Post -Uri $URLSecure -Body $JSON

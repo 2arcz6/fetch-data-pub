@@ -2,7 +2,7 @@ $URL = "https://api.github.com"
 $Endpoint = "/gists"
 
 
-$password = Get-Content %USERPROFILE%/Desktop/pass.txt
+$password = Get-Content pass.txt
 
 $URLAnon = "$URL$Endpoint"
 

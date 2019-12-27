@@ -6,7 +6,6 @@ $password = Get-Content pass.txt
 
 $URLAnon = "$URL$Endpoint"
 
-
 $JSON = ConvertTo-Json @{
           description = "the descriptiodsadasdn for this gist";
           public =  $true;
